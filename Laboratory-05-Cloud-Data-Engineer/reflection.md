@@ -1,1 +1,11 @@
+# Mission 5 Reflection
 
+Object storage makes way more sense than block storage when you're dealing with something like millions of user photos. Block storage is great for stuff like databases or OS drives where you need fast, constant read/write access to structured data, but it doesn't really scale well once you're talking about huge numbers of separate files. Object storage instead treats each photo as its own object with metadata and a unique ID, sitting in a flat structure instead of nested folders. That makes it way easier to scale, and since it's accessed through simple HTTP calls, it fits naturally with how a web or mobile app would actually upload and pull images.
+
+Docker made deploying MinIO a lot less painful than I expected. Instead of manually installing MinIO and dealing with dependencies, one `docker run` command spun up a fully working server in seconds, with the login credentials set right through environment variables. That said, it wasn't completely smooth — the official `minio/minio` image turned out to be discontinued, so I had to swap in a community-maintained alternative, and then ran into a permissions error where the container kept exiting immediately. Reading through `docker logs` to actually figure out what was going wrong, then fixing it by running the container as root, taught me more about how containers work than if everything had just worked on the first try.
+
+A "bucket" is basically the container that holds your objects — kind of like a root folder, except it's flat rather than nested. In this lab, `client-photos` is the bucket holding the file I uploaded, and every object inside it belongs to that bucket specifically.
+
+As for how big companies avoid losing data if a server crashes — it comes down to redundancy. Data gets replicated across multiple disks and servers, sometimes even across different data centers entirely. MinIO specifically uses erasure coding, splitting data into fragments across drives so it can survive a disk failure without needing full duplicate copies of everything.
+
+Doing this lab honestly boosted my confidence with the command line. Troubleshooting a real error instead of just following steps that worked perfectly made the whole process feel a lot less intimidating.
