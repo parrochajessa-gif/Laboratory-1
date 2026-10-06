@@ -14,7 +14,7 @@ Environment variables pass settings such as the database name, username, and pas
 
 **4. How did it feel to deploy a fully functional enterprise cloud storage system in just a few minutes?**
 
-[EDIT THIS TO BE TRUE FOR YOU] It felt surprising. I expected something this complex to need a long installation, but Docker downloaded both images and connected them automatically. Seeing the Nextcloud setup page open in my browser made Infrastructure as Code feel real.
+It felt surprising. I expected something this complex to need a long installation, but Docker downloaded both images and connected them automatically. Seeing the Nextcloud setup page open in my browser made Infrastructure as Code feel real.
 
 **5. How has your understanding of Cloud Computing evolved since Mission 1?**
 
