@@ -17,5 +17,4 @@ Environment variables pass settings such as the database name, username, and pas
 It felt surprising. I expected something this complex to need a long installation, but Docker downloaded both images and connected them automatically. Seeing the Nextcloud setup page open in my browser made Infrastructure as Code feel real.
 
 **5. How has your understanding of Cloud Computing evolved since Mission 1?**
-
-[EDIT THIS TO BE TRUE FOR YOU] In Mission 1, I thought cloud computing was mostly about [what you thought back then]. Now I understand it also involves containers, automation, and defining infrastructure through code. Moving from single containers to a multi-container stack showed me how real applications are built and deployed.
+ In Mission 1, I thought cloud computing was mostly about. Now I understand it also involves containers, automation, and defining infrastructure through code. Moving from single containers to a multi-container stack showed me how real applications are built and deployed.
