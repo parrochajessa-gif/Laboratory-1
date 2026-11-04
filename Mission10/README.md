@@ -78,7 +78,7 @@ gunzip < backups/FILE.sql.gz | docker exec -i wp_db sh -c 'mysql -u root -p"$MYS
 
 **Firewall, open ports, scripts, backup, and cron**
 
-![Security and automation](screenshots/05-ufw-ports-cron..png)
+![Security and automation](screenshots/05-ufw-ports-cron.png)
 
 **Cron running automatically**
 
